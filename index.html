@@ -379,8 +379,21 @@
     </footer>
     <!--jquery for bootstrap plugins-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!--js componets of bootstrap-->
     <script src="js/bootstrap.min.js"></script>
 
+    <!--jquery to add play and pause control for carousel  -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#mycarousel").carousel({interval:2000});
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 </html>
