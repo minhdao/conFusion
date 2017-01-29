@@ -386,12 +386,27 @@
     <!--jquery to add play and pause control for carousel  -->
     <script type="text/javascript">
         $(document).ready(function(){
+            // set 2s interval for each pic in the carousel
             $("#mycarousel").carousel({interval:2000});
+
+            // jquery to pause carousel
             $("#carousel-pause").click(function(){
                 $("#mycarousel").carousel('pause');
             });
+
+            // jquery to run carousel
             $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
+            });
+
+            // jquery to show login modal
+            $("#loginIcon").click(function(){
+                $("#loginModal").modal('show');
+            });
+
+            // jquery to show reserve modal
+            $("#reserveBtn").click(function(){
+                $("#reserveModal").modal('show');
             });
         });
     </script>
